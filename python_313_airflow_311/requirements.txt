@@ -1,0 +1,3 @@
+apache-airflow-providers-fab
+apache-airflow[postgres,microsoft-azure,kubernetes]==3.1.0
+structlog==25.4.0

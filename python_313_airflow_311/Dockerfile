@@ -1,4 +1,6 @@
 FROM python:3.13-slim
 
-RUN pip install apache-airflow-providers-fab \
-    apache-airflow[postgres,microsoft-azure,kubernetes]==3.1.1
+WORKDIR /app
+
+RUN --mount=type=bind,source=./requirements.txt,target=/app/requirements.txt \
+    pip install --no-cache-dir --disable-pip-version-check -r requirements.txt
