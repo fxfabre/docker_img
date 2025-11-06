@@ -1,3 +1,5 @@
 apache-airflow-providers-fab
 apache-airflow[postgres,microsoft-azure,kubernetes]
+
 structlog
+kubernetes
